@@ -894,7 +894,7 @@
 - (BOOL) publish_
 {
     // Remove all old publish directories if user has cleaned the cache
-    if (projectSettings.needRepublish)
+    /*if (projectSettings.needRepublish)
     {
         NSFileManager *fm = [NSFileManager defaultManager];
         NSString* publishDir;
@@ -915,7 +915,7 @@
             publishDir = [projectSettings.publishDirectoryHTML5 absolutePathFromBaseDirPath:[projectSettings.projectPath stringByDeletingLastPathComponent]];
             [fm removeItemAtPath:publishDir error:NULL];
         }
-    }
+    }*/
     
     if (!runAfterPublishing)
     {
